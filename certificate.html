@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Course Certificate</title>
+    <title>View Certificate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { margin: 0; font-family: Arial; background: #f2f2f2; }
+        body { margin: 0; font-family: Arial; background: white; }
 
         .topbar {
             background: #1e1e1e;
@@ -12,18 +12,18 @@
             padding: 10px;
         }
 
-        .container {
+        .content {
             text-align: center;
-            margin-top: 200px;
+            padding: 20px;
         }
 
-        .btn {
-            background: #2f6edb;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
+        img {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .qr {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -31,18 +31,18 @@
 <body>
 
 <div class="topbar">
-    archive.nptel.ac.in/content
+    archive.nptel.ac.in/noc/Ecel
 </div>
 
-<div class="container">
-    <button class="btn" onclick="goToCertificate()">Course Certificate</button>
-</div>
+<div class="content">
 
-<script>
-function goToCertificate() {
-    window.location.href = "certificate.html";
-}
-</script>
+    <img src="main.jpg">
+
+    <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://bandireddy8125.github.io/certificate-project/">
+    </div>
+
+</div>
 
 </body>
 </html>
